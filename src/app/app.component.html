@@ -11,9 +11,9 @@
   <app-profile language={{currentLanguage}}></app-profile>
 </div>
 <div class="section" id="section3">
-
+  <p class="slidable"> Text to side whe under the rect</p>
 </div>
-@defer (on viewport) {
+
 <div class="section" id="section4">
   <p>.</p>
   <p>.</p>
@@ -39,21 +39,18 @@
   <p>.</p>
   <p>.</p>
 </div>
-} @placeholder {
-<p>Future comments</p>
-} @loading (minimum 2s) {
-<p>Loading next...</p>
-}
+
 <nav>
-  <div class="language-selector">
+  <div class="box language-selector">
     <span (click)="setLanguage('en_US')">English</span> |
-    <span (click)="setLanguage('de_DE')">Deutsch</span> |
-    <span (click)="setLanguage('ru_RU')">Русский</span>
+    <span (click)="setLanguage('de_DE')">Deutsch</span> 
+    @if (showRusskiy) {<span (click)="setLanguage('ru_RU')">| Русский</span>}
   </div>
 
   <a href="#section2">About</a>
   <a href="#section3">Experience</a>
   <a href="#section4">Education</a>
+
 </nav>
 
 

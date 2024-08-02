@@ -1,0 +1,15 @@
+.slidable {
+    transform: none;
+    transition: transform 1s ease-in-out;
+}
+.slidable:hover {
+    transform: translateX(-100%);
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    background-color: rgba(0, 0, 0, 0.5);
+  }

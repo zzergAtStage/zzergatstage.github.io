@@ -6,6 +6,8 @@ import { ProfileComponent } from './services/model/ProfileComponent';
 import { LanguageSelectorComponent } from "./navigation/language-selector/language-selector.component";
 import { ScrollToTopComponent } from "./navigation/scroll-to-top/scroll-to-top.component";
 import { LinkedInService } from './services/linkedin.service';
+import { LocaleService } from './services/locale-service';
+
 @Component({
   selector: 'app-root',
   standalone: true,
@@ -13,12 +15,20 @@ import { LinkedInService } from './services/linkedin.service';
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
-export class AppComponent {
+export class AppComponent implements OnInit {
   isSticky: boolean = false;
   currentLanguage: string = 'en_US';
   windowScrolled: boolean = false;
 
-  constructor(private linkedInProfiler: LinkedInService) { }
+  showRusskiy: boolean = false;
+
+  constructor(private linkedInProfiler: LinkedInService,private localeService: LocaleService) { }
+
+
+  ngOnInit() {
+    const locale = this.localeService.getBrowserLocale();
+    this.showRusskiy = locale === 'ru-RU';
+  }
   //scrolling sections
   @HostListener('window:scroll', ['$event'])
   handleScroll() {
