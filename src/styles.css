@@ -1,1 +1,80 @@
 /* You can add global styles to this file, and also import other style files */
+
+:root {
+  --artdeco-reset-typography-font-family-sans: -apple-system, system-ui, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Fira Sans, Ubuntu, Oxygen, Oxygen Sans, Cantarell, Droid Sans, Apple Color Emoji, Segoe UI Emoji, Segoe UI Emoji, Segoe UI Symbol, Lucida Grande, Helvetica, Arial, sans-serif;
+  --z-nav: 100;
+  --z-nav-opened: 102;
+  --z-section-top: 101;
+  --z-section-overlap: 999;
+  --z-section-profile: 10;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-family: var(--artdeco-reset-typography-font-family-sans);
+}
+
+header,
+#copyright {
+
+  text-align: center;
+  /* background-color: black; */
+  padding-top: 2px;
+  padding-bottom: 2px;
+  /* position: fixed; */
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+body {
+  margin: 0px;
+}
+
+.section {
+  position: relative;
+  height: fit-content;
+  background: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(15px);
+  padding: 20px;
+  color: white;
+  font-size: 1.5em;
+  margin: 0px 50px 20px 50px;
+}
+
+nav {
+  position: fixed;
+  display: flex;
+    flex-direction: row;
+  top: 0;
+  right: 0;
+  padding: 10px;
+  background-color: black;
+
+}
+
+nav a, .language-selector{
+  color: white;
+  margin: 10px;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+#section1 {
+  position: -webkit-sticky; /* For Safari */
+  position: sticky;
+  top: 50px;
+  z-index: var(--z-section-overlap); 
+  background-color: rgba(0, 0, 0, 0.5); /* Add background to prevent content overlap */
+  padding: 5px 10px;
+  color: white;
+  height: min-content;
+}
+
+.hidden-content {
+  visibility: hidden;
+}
+
+.visible-content {
+  visibility: visible;
+}
