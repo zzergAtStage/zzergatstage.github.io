@@ -10,10 +10,14 @@ import { LocaleService } from './services/locale-service';
 import { CvPageComponent } from "./pages/cv-page/cv-page.component";
 
 
+
+
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterLink, RouterOutlet, RouterModule, CommonModule, MatrixCodeComponent, ProfileComponent, LanguageSelectorComponent, ScrollToTopComponent, CvPageComponent],
+  imports: [RouterLink, RouterOutlet, RouterModule, CommonModule,
+    MatrixCodeComponent, ProfileComponent, LanguageSelectorComponent, ScrollToTopComponent, CvPageComponent
+  ],
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
@@ -23,7 +27,5 @@ export class AppComponent {
   setLanguage(arg0: string) {
     this.language = arg0;
   }
-
-
 
 }

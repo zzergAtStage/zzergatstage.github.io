@@ -79,8 +79,8 @@ export class CvPageComponent implements OnInit {
     const section1 = document.getElementById('section1');
     const section1Rect = section1?.getBoundingClientRect();
     if (section1Rect) {
-      this.isSticky = section1Rect.top <= 0;
-      this.updateContentVisibility(section1Rect.bottom);
+      this.isSticky = section1Rect.bottom <= 0;
+      this.updateContentVisibility(section1Rect.top - 10);
     }
 
     if (window.scrollY || document.documentElement.scrollTop || document.body.scrollTop > 100) {
@@ -120,8 +120,10 @@ export class CvPageComponent implements OnInit {
       if (index === 0) return; // Skip the first section
 
       const content = section.querySelector('.content');
+      const contentId = section.id;
       if (content) {
         const contentRect = content.getBoundingClientRect();
+        console.log(" cv-page.updateContentVisibility: (" + contentId + ") "  + contentRect.bottom );
         if (contentRect.top < section1Bottom) {
           content.classList.add('hidden-content');
           content.classList.remove('visible-content');

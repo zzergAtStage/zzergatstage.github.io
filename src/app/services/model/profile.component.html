@@ -1,7 +1,7 @@
 <div *ngIf="localizedProfile">
-    <div class="container"><img class="content" *ngIf="profileData.profilePicture"
+    <div class="container content"><img  *ngIf="profileData.profilePicture"
             [src]="getProfilePictureUrl(profileData.profilePicture.displayImage)" alt="Profile Picture">
-        <h1 class="content full-name">{{ profileData.firstName.localized[language] }} {{
+        <h1 class="full-name">{{ profileData.firstName.localized[language] }} {{
             profileData.lastName.localized[language] }}</h1>
     </div>
     <p class="content">{{ profileData.headline.localized[language] }}</p>
@@ -9,10 +9,10 @@
         <p style="flex: 2;">{{ profileData.about.localized[language] }}</p>
         <!-- <img style="flex: 1;" src="src/app/assets/skills_painting.jpg" alt=""> -->
     </article>
-    <article class="section">
+    <article class="section content">
         <p>{{profileData.experience.localized[language]}}</p>
     </article>
-    <article class="section">
+    <article class="section content">
         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni cupiditate veniam sint est. Dolor facilis officia aliquid et. Aperiam cupiditate repellendus neque, excepturi corporis blanditiis odit molestiae perferendis reprehenderit voluptatum?
     </article>
 </div>

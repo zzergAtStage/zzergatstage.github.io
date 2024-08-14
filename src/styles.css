@@ -6,7 +6,7 @@
   --z-nav-opened: 102;
   --z-section-top: 101;
   --z-section-overlap: 999;
-  --z-section-profile: 10;
+  --z-section-profile: 103;
 }
 
 html {
@@ -50,6 +50,7 @@ nav {
   right: 0;
   padding: 10px;
   background-color: black;
+  z-index: var(--z-nav);
 
 }
 
