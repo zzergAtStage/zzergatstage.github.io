@@ -1,4 +1,4 @@
-<app-matrix-code></app-matrix-code>
+
 
 <div class="section" id="section1">
   <header>
@@ -7,52 +7,28 @@
   </header>
 
 </div>
-<div class="section" id="section2">
-  <app-profile language={{currentLanguage}}></app-profile>
-</div>
-<div class="section" id="section3">
-  <p class="slidable"> Text to side whe under the rect</p>
-</div>
 
-<div class="section" id="section4">
-  <p>.</p>
-  <p>.</p>
-  <p>.</p>
-  <p>.</p>
-  <p>.</p>
-  <p>.</p>
-  <p>.</p>
-  <p>.</p>
-  <p>.</p>
-  <p>.</p>
-  <p>.</p>
-  <p>.</p>
-  <p>.</p>
-  <p>.</p>
-  <p>.</p>
-  <p>.</p>
-  <p>.</p>
-  <p>.</p>
-  <p>.</p>
-  <p>.</p>
-  <p>.</p>
-  <p>.</p>
-  <p>.</p>
-</div>
+<app-cv-page></app-cv-page>
 
 <nav>
+  <div class="nav-short-about-fixed">
+    <div>"Sergio Brü"</div>
+    <div class="truncate">"Middle+ Java software developer | PL SQL developer"</div>
+  </div>
+  
   <div class="box language-selector">
     <span (click)="setLanguage('en_US')">English</span> |
     <span (click)="setLanguage('de_DE')">Deutsch</span> 
-    @if (showRusskiy) {<span (click)="setLanguage('ru_RU')">| Русский</span>}
+    @if (showRussian) {<span (click)="setLanguage('ru_RU')">| Русский</span>}
   </div>
 
-  <a href="#section2">About</a>
+  <!-- <a href="#section2">About</a> -->
   <a href="#section3">Experience</a>
   <a href="#section4">Education</a>
-
+  <a routerLink="/cv" active>Resume</a>
 </nav>
 
 
-<app-scroll-to-top></app-scroll-to-top>
 <router-outlet></router-outlet>
+<app-matrix-code></app-matrix-code>
+<app-scroll-to-top></app-scroll-to-top>

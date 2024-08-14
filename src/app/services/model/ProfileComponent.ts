@@ -22,7 +22,7 @@ export class ProfileComponent implements OnInit, OnChanges {
     }
   
     ngOnChanges(changes: SimpleChanges): void {
-      console.log('changes: ' + changes);
+      console.log('changes: ' + changes['language'].currentValue + " " + typeof changes);
       if (changes['language']) {
         this.localizeProfileData();
       }

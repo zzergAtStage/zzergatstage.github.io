@@ -1,15 +1,32 @@
 .scroll-to-top {
-    position: fixed;
-    font-size: large;
-    padding: 10px;
-    opacity: 0.9;
-    bottom: 40px;
-    right: 20px;
-    border: none;
-    outline: none;
-    background-color: #745e77;
-    color: white;
-    cursor: pointer;
-    padding: 15px;
-    border-radius: 30%; 
-  }
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #f4427d68; /* Blue background */
+  border: none;
+  border-radius: 50%; /* Circular button */
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+  cursor: pointer;
+  transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+.scroll-to-top:hover {
+  background-color: #b3007d; /* Darker blue on hover */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Stronger shadow on hover */
+}
+
+.arrow-icon {
+  width: 24px; /* Adjust the size of the arrow */
+  height: 24px;
+  fill: #fff; /* White arrow color */
+  transition: transform 0.3s;
+}
+
+.scroll-to-top:hover .arrow-icon {
+  transform: translateY(-2px); /* Slight upward movement on hover */
+}

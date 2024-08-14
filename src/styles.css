@@ -39,7 +39,7 @@ body {
   padding: 20px;
   color: white;
   font-size: 1.5em;
-  margin: 0px 50px 20px 50px;
+  margin: 70px 50px 20px 50px;
 }
 
 nav {
@@ -59,7 +59,19 @@ nav a, .language-selector{
   text-decoration: none;
   cursor: pointer;
 }
+.nav-short-about-fixed {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-content: baseline;
+}
 
+
+.truncate {
+  white-space: nowrap!important;
+  overflow: hidden!important;
+  text-overflow: ellipsis!important;
+}
 #section1 {
   position: -webkit-sticky; /* For Safari */
   position: sticky;
@@ -78,5 +90,3 @@ nav a, .language-selector{
 .visible-content {
   visibility: visible;
 }
-
-

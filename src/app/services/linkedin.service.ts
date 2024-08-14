@@ -7,18 +7,6 @@ import { Observable, of } from 'rxjs';
 })
 export class LinkedInService {
   private mockData = {
-    firstName: {
-      localized: {
-        en_US: "Sergei",
-        de_DE: "Sergey",
-        ru_RU: "Сергей"
-      },
-      preferredLocale: {
-        country: "US",
-        language: "en"
-      }
-    },
-    localizedFirstName: "Sergei",
     headline: {
       localized: {
         en_US: "Java Developer | PL/SQL Developer | Specializing in High-Load Systems & Financial Solutions (PL/SQL, Analysis)",
@@ -31,8 +19,19 @@ export class LinkedInService {
       }
     },
     localizedHeadline: "Java Developer | PL/SQL Developer | Specializing in High-Load Systems & Financial Solutions (PL/SQL, Analysis)",
-    vanityName: "s.brusentsov",
-    id: "secretcode",
+
+    firstName: {
+      localized: {
+        en_US: "Sergei",
+        de_DE: "Sergey",
+        ru_RU: "Сергей"
+      },
+      preferredLocale: {
+        country: "US",
+        language: "en"
+      }
+    },
+    localizedFirstName: "Sergei",
     lastName: {
       localized: {
         en_US: "Brusentsov",
@@ -61,9 +60,23 @@ Wenn ich nicht gerade in Code vertieft bin, findet man mich beim Wandern, Snowbo
       }
     },
     localizedAbout: "Some huge text",
+    experience: {
+      localized: {
+        en_US: "Informtech oo Ltd",
+        de_DE: "Informtech GmBH",
+        ru_RU: "Информтех ООО, "
+      }, preferredLocale: {
+        country: "US",
+        language: "en"
+      }
+    }, 
+    localizedexperience: "Some localized Expirience",
+
     profilePicture: {
       displayImage: "urn:li:digitalmediaAsset:C4D00AAAAbBCDEFGhiJ"
-    }
+    },
+    vanityName: "s.brusentsov",
+    id: "secretcode",
   };
 
   constructor() { }
