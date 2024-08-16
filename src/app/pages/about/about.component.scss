@@ -11,12 +11,12 @@
   .bio-and-image {
     height: calc(50 * var(--vh));
     width: 100%;
-    background: linear-gradient(
-        to right,
-        rgba($background-color, 0.7),
-        rgba($background-color, 0.3)
-      ),
-      url("/assets/images/daniel.jpg") center top 20%;
+    // background: linear-gradient(
+    //     to right,
+    //     rgba($background-color, 0.7),
+    //     rgba($background-color, 0.3)
+    //   ),
+    //   url("/assets/images/daniel.jpg") center top 20%;
     background-size: cover;
 
     display: flex;

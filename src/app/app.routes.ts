@@ -4,14 +4,16 @@ import { AppComponent } from './app.component';
 import { PageNotFoundComponent } from './pages/page-not-found/page-not-found.component';
 import { HomeComponent } from './pages/home/home.component';
 import { AboutComponent } from './pages/about/about.component';
+import { ContactsComponent } from './pages/contacts/contacts.component';
 
 
 
 export const routes: Routes = [
   { path: '',  component: HomeComponent },
   { path: 'about', title: 'About', component: AboutComponent },
-  { path: 'cv-static', title: 'static', component: CvPageComponent },
-  { path: '**', title: '404', component: PageNotFoundComponent },
+  { path: 'contacts', title: 'Contacts', component: ContactsComponent },
+  { path: 'projects', title: 'Projects', component: HomeComponent },
+  { path: '**', title: 'Not found 404', component: PageNotFoundComponent },
   
 
 ];

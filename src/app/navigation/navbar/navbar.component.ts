@@ -16,7 +16,7 @@ export class NavbarComponent implements OnInit {
     { label: 'Home', url: '/', active: false },
     { label: 'About Me', url: '/about', active: false },
     { label: 'My Projects', url: '/projects', active: false },
-    { label: 'Contact Me', url: '/contact', active: false },
+    { label: 'Contact Me', url: '/contacts', active: false },
   ];
 
   constructor(public router: Router) {}

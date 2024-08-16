@@ -1,8 +1,12 @@
-<div class="about">
+<div class="about" *ngIf="localizedProfile">
     <div class="bio-and-image">
+      <!-- <img  *ngIf="profileData.profilePicture"
+            [src]="getProfilePictureUrl(profileData.profilePicture.displayImage)" alt="Profile Picture"> -->
       <div class="bio">
         <h2>BIO</h2>
-        <p>I'm a Backend developer and Data Engineer.</p>
+        <h2 class="full-name">{{ profileData.firstName.localized[language] }} {{
+            profileData.lastName.localized[language] }}</h2>
+        <p>{{ profileData.headline.localized[language] }}</p>
         <p>
           I started my professional life as a Accounting manager etc...
         </p>
