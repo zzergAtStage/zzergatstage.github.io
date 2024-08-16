@@ -22,6 +22,7 @@ import { LocaleService } from './services/locale-service';
 })
 export class AppComponent {
   private language: string = '';
+  instaRef: any = 'https://www.instagram.com/the_aging_zzerg/';
   constructor(
 
     private localeService: LocaleService,

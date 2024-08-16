@@ -1,7 +1,14 @@
 /* You can add global styles to this file, and also import other style files */
+@import "colors";
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
 
 :root {
-  --artdeco-reset-typography-font-family-sans: -apple-system, system-ui, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Fira Sans, Ubuntu, Oxygen, Oxygen Sans, Cantarell, Droid Sans, Apple Color Emoji, Segoe UI Emoji, Segoe UI Emoji, Segoe UI Symbol, Lucida Grande, Helvetica, Arial, sans-serif;
   --z-nav: 100;
   --z-nav-opened: 102;
   --z-section-top: 101;
@@ -11,7 +18,16 @@
 
 html {
   scroll-behavior: smooth;
-  font-family: var(--artdeco-reset-typography-font-family-sans);
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
 }
 
 header,
@@ -45,7 +61,7 @@ body {
 nav {
   position: fixed;
   display: flex;
-    flex-direction: row;
+  flex-direction: row;
   top: 0;
   right: 0;
   padding: 10px;
@@ -54,12 +70,14 @@ nav {
 
 }
 
-nav a, .language-selector{
+nav a,
+.language-selector {
   color: white;
   margin: 10px;
   text-decoration: none;
   cursor: pointer;
 }
+
 .nav-short-about-fixed {
   color: white;
   display: flex;
@@ -69,16 +87,19 @@ nav a, .language-selector{
 
 
 .truncate {
-  white-space: nowrap!important;
-  overflow: hidden!important;
-  text-overflow: ellipsis!important;
+  white-space: nowrap !important;
+  overflow: hidden !important;
+  text-overflow: ellipsis !important;
 }
+
 #section1 {
-  position: -webkit-sticky; /* For Safari */
+  position: -webkit-sticky;
+  /* For Safari */
   position: sticky;
   top: 50px;
-  z-index: var(--z-section-overlap); 
-  background-color: rgba(0, 0, 0, 0.5); /* Add background to prevent content overlap */
+  z-index: var(--z-section-overlap);
+  background-color: rgba(0, 0, 0, 0.5);
+  /* Add background to prevent content overlap */
   padding: 5px 10px;
   color: white;
   height: min-content;
@@ -91,5 +112,3 @@ nav a, .language-selector{
 .visible-content {
   visibility: visible;
 }
-html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
