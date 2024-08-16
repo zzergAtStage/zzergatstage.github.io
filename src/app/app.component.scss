@@ -1,0 +1,54 @@
+@import "colors";
+@import "animations";
+@import "responsive";
+
+header {
+  position: fixed;
+  z-index: 2;
+  width: 100%;
+  padding: 1em;
+
+  @include media-md {
+    position: absolute;
+  }
+}
+
+main {
+  height: 100%;
+  width: 100%;
+}
+
+footer {
+  width: 100%;
+  min-width: 97vw;
+  min-height: 1em;
+  position: absolute;
+  bottom: 0em;
+
+  .social-icons {
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    left: 0.4em;
+    bottom: 0;
+
+    a {
+      padding: 0.4em;
+      @include transition-ease;
+
+      &:hover {
+        color: $secondary-color;
+      }
+    }
+  }
+
+  .copyright {
+    font-size: 1em;
+    text-align: right;
+    color: $primary-color;
+    white-space: nowrap;
+    position: absolute;
+    right: 0.8em;
+    bottom: 0.8em;
+  }
+}

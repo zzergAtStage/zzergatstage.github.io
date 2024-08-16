@@ -1,0 +1,67 @@
+@import "colors";
+@import "responsive";
+
+.home {
+    height: 100%;
+    min-height: calc(100 * var(--vh));
+    padding-top: calc(45 * var(--vh));
+    overflow: hidden;
+    align-items: center;
+    text-align: center;
+  
+    background: linear-gradient(
+        to right,
+        rgba($background-color, 0.7),
+        rgba($background-color, 0.3)
+      ),
+      url("/assets/images/daniel.jpg") center;
+    background-size: cover;
+  
+    .salute {
+      padding-bottom: 0.5em;
+      font-size: 1.5em;
+      @include media-md {
+        font-size: 2.0em;
+      }
+      @include media-lg {
+        font-size: 2.5em;
+      }
+      @include media-xl {
+        font-size: 3.0em;
+      }
+    }
+  
+    .name {
+      padding-bottom: 0.2em;
+      margin-bottom: 0.2em;
+      border-bottom: 2px solid #fff;
+      font-size: 4em;
+      @include media-md {
+        font-size: 5em;
+      }
+      @include media-lg {
+        font-size: 6em;
+      }
+      @include media-xl {
+        font-size: 7em;
+      }
+  
+      .last-name {
+        color: $secondary-color;
+        font-weight: 700;
+      }
+    }
+  
+    .position {
+      font-size: 1.5em;
+      @include media-md {
+        font-size: 2.0em;
+      }
+      @include media-lg {
+        font-size: 2.5em;
+      }
+      @include media-xl {
+        font-size: 3.0em;
+      }
+    }
+  }

@@ -1,42 +1,43 @@
+<header>
+  <app-navbar></app-navbar>
+</header>
 
-<nav class="navbar" id="nav-root">
-  <!-- <div class="nav-short-about-fixed">
+<!-- <nav class="navbar" id="nav-root"> -->
+<!-- <div class="nav-short-about-fixed">
     <div>"Sergio Brü"</div>
     <div class="truncate">"Middle+ Java software developer | PL SQL developer"</div>
   </div> -->
-  
-  <div class="box language-selector">
+
+<!-- <div class="box language-selector">
     <span (click)="setLanguage('en_US')">English</span> |
     <span (click)="setLanguage('de_DE')">Deutsch</span> 
     @if (showRussian) {<span (click)="setLanguage('ru_RU')">| Русский</span>}
   </div>
 
-  <!-- <a href="#section2">About</a> -->
+  
   <a href="#section3">Experience</a>
   <a href="#section4">Education</a>
   <a routerLink="/cv" active>Resume</a>
   <a href="/flow-section" >test</a>
 
-</nav>
-
-
-<router-outlet></router-outlet>
-<app-matrix-code></app-matrix-code>
-<app-scroll-to-top></app-scroll-to-top>
+</nav> -->
+<main>
+  
+  <app-matrix-code></app-matrix-code>
+  <router-outlet></router-outlet>
+  <app-scroll-to-top></app-scroll-to-top>
+</main>
 
 <footer>
   <div class="social-icons">
-    <a [href]="instaRef" target="_blank">
+    <a [href]="instagramRef" target="_blank">
       <i class="fab fa-instagram fa-2x"></i>
     </a>
-    <a href="" target="_blank">
-      <i class="fab fa-stack-overflow fa-2x"></i>
-    </a>
-    <a href="" target="_blank">
+    <a [href]="githubRef" target="_blank">
       <i class="fab fa-github fa-2x"></i>
     </a>
   </div>
   <div class="copyright">
-    <span>&copy; Copyright 2022</span>
+    <span>&copy; Copyright 2024</span>
   </div>
 </footer>
