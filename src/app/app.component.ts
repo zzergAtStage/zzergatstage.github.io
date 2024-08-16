@@ -1,13 +1,12 @@
 import { CommonModule } from '@angular/common';
-import { Component, HostListener, Input, input, OnInit, Output } from '@angular/core';
+import { Component, Input, Output } from '@angular/core';
 import { ActivatedRoute, RouterLink, RouterModule, RouterOutlet } from '@angular/router';
 import { MatrixCodeComponent } from "./matrix-code/matrix-code.component";
-import { ProfileComponent } from './services/model/ProfileComponent';
 import { LanguageSelectorComponent } from "./navigation/language-selector/language-selector.component";
 import { ScrollToTopComponent } from "./navigation/scroll-to-top/scroll-to-top.component";
-import { LinkedInService } from './services/linkedin.service';
-import { LocaleService } from './services/locale-service';
 import { CvPageComponent } from "./pages/cv-page/cv-page.component";
+import { ProfileComponent } from './services/model/ProfileComponent';
+import { LocaleService } from './services/locale-service';
 
 
 
@@ -22,10 +21,24 @@ import { CvPageComponent } from "./pages/cv-page/cv-page.component";
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  @Input() language = '';
+  private language: string = '';
+  constructor(
+
+    private localeService: LocaleService,
+    private route: ActivatedRoute
+  ) { }
+
+  ngOnInit() {
+    //TODO: handle query params
+    const locale = this.localeService.getBrowserLocale();
+    this.showRussian = locale === 'ru-RU';
+  }
+
+  
   showRussian: any;
-  setLanguage(arg0: string) {
-    this.language = arg0;
+  setLanguage(_language: string) {
+    this.language = _language;
+    this.localeService.changeLanguage(_language);
   }
 
 }

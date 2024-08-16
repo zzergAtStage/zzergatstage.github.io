@@ -2,6 +2,8 @@ import { Component, Input, OnChanges, OnInit, SimpleChanges } from '@angular/cor
 import { LinkedInService } from '../linkedin.service';
 import { CommonModule } from '@angular/common';
 import { LanguageSelectorComponent } from '../../navigation/language-selector/language-selector.component';
+import { Subscription } from 'rxjs';
+import { LocaleService } from '../locale-service';
 
 @Component({
     selector: 'app-profile',
@@ -14,13 +16,26 @@ export class ProfileComponent implements OnInit, OnChanges {
     @Input() language: string = 'en_US';
     profileData: any;
     localizedProfile: any = {};
+    languageSubscription: Subscription | undefined;
   
-    constructor(private linkedInService: LinkedInService) { }
+    constructor(private linkedInService: LinkedInService,
+      private localeService: LocaleService
+    ) { }
   
     ngOnInit(): void {
+      this.languageSubscription = this.localeService.currentLanguage.subscribe(language => {
+        this.language = language;
+        this.localizeProfileData();
+      });
       this.fetchProfileData();
     }
   
+    ngOnDestroy(): void {
+      if (this.languageSubscription){
+        this.languageSubscription.unsubscribe();
+      }
+    }
+
     ngOnChanges(changes: SimpleChanges): void {
       console.log('changes: ' + changes['language'].currentValue + " " + typeof changes);
       if (changes['language']) {

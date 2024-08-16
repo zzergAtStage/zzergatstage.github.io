@@ -1,12 +1,18 @@
 
 import { Injectable } from '@angular/core';
-import { Observable, of } from 'rxjs';
+import { BehaviorSubject, Observable, of } from 'rxjs';
 
 @Injectable({
   providedIn: 'root',
 })
 
 export class LocaleService {
+  private languageSource = new BehaviorSubject<string>('en_US'); // Default language
+  currentLanguage = this.languageSource.asObservable();
+
+  changeLanguage(language: string) {
+    this.languageSource.next(language);
+  }
 
   private mockMapData: {
     localeShorted: {
