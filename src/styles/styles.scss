@@ -11,6 +11,7 @@ body {
   height: 100%;
   --app-height: 100vh;
   --vh: calc(var(--app-height) / 100);
+  --z-top: 199;
   scroll-behavior: smooth;
   background-color: $background-color;
   color: $primary-color;

@@ -5,7 +5,7 @@
 
 .menu-btn {
   position: absolute;
-  z-index: var();
+  z-index: var(--z-top);
   right: 1em;
   top: 1.5em;
   height: 20px;
@@ -39,11 +39,13 @@ nav {
     @include transition-ease;
 
     &.menu-open {
+      opacity: 0.99;
       transform: translateY(0);
     }
 
     .link-item {
       transform: translateX(100vw);
+      -webkit-transform: translateX(100vw);
       @include transition-ease;
 
       &.menu-open {
