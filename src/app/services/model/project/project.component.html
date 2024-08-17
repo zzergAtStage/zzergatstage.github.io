@@ -1,0 +1,25 @@
+<div *ngIf="projectObj" class="project-item">
+    <div class="project-title">{{ projectObj.title }}</div>
+    <div class="image-container">
+      <img [src]="projectObj.imageObj.src" [alt]="projectObj.imageObj.alt" />
+    </div>
+    <div class="links">
+      <div class="columns">
+        <div *ngFor="let linkObj of projectObj.linkObjs" class="column">
+          <a class="link" [href]="linkObj.url" target="_blank">
+            <i [class]="iconClasses[linkObj.icon]"></i> {{ linkObj.label }}
+          </a>
+        </div>
+      </div>
+      <div *ngIf="projectObj.imageObj.attributionUrl" class="image-attribution">
+        <a
+          class="link"
+          [href]="projectObj.imageObj.attributionUrl"
+          target="_blank"
+        >
+          <i class="fa-solid fa-image"></i>
+          {{ projectObj.imageObj.attributionLabel }}
+        </a>
+      </div>
+    </div>
+  </div>

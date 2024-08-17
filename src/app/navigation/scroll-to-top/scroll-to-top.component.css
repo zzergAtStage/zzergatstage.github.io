@@ -1,43 +1,67 @@
 .scroll-to-top-matrix {
   position: fixed;
-  bottom: 20px;
+  bottom: 50px;
   right: 20px;
-  background-color: #000; /* Black background */
-  border: 2px solid #b3007d52; /* Magenta border */
-  border-radius: 50%; /* Circular button */
+  background-color: #000;
+  /* Black background */
+  /* $secondary-color: #f4427d; */
+
+  border: 2px solid #f4427d;
+  /* Magenta border */
+  border-radius: 50%;
+  /* Circular button */
   width: 50px;
   height: 50px;
   display: flex;
   justify-content: center;
   align-items: center;
-  box-shadow: 0 0 10px #b3007d89, 0 0 20px #b3007d84, 0 0 30px #b3007d8d; /* Magenta glowing effect */
+  box-shadow: 0 0 10px #f4427d78, 0 0 20px #f4427d87, 0 0 30px #f4427d5a;
+  /* Magenta glowing effect */
   cursor: pointer;
   transition: box-shadow 0.3s, transform 0.3s;
 }
 
+.arrow-icon-matrix {
+  scale: 0.7;
+}
 .scroll-to-top-matrix:hover {
-  box-shadow: 0 0 20px #b3007d, 0 0 40px #b3007d, 0 0 60px #b3007d; /* Stronger magenta glow on hover */
-  transform: scale(1.1); /* Slight zoom on hover */
+  box-shadow: 0 0 20px #f4427d, 0 0 40px #f4427d7a, 0 0 60px #f4427d53;
+  /* Stronger magenta glow on hover */
+  transform: scale(1.1);
+  /* Slight zoom on hover */
 }
 
-.currentColor{
+.currentColor {
   width: 24px;
   height: 24px;
-  fill: #0fb300; /* Magenta arrow */
+  fill: #f4427d;
+  /* Magenta arrow */
   transition: transform 0.3s;
 }
 
 .scroll-to-top-matrix:hover .currentColor {
-  transform: translateY(-2px) rotate(10deg); /* Slight upward and rotation effect */
+  transform: translateY(-2px) rotate(10deg);
+  /* Slight upward and rotation effect */
 }
 
 /* Flickering effect */
 @keyframes flicker {
-  0%, 19%, 21%, 23%, 25%, 54%, 56%, 100% {
-      opacity: 1;
+
+  0%,
+  19%,
+  21%,
+  23%,
+  25%,
+  54%,
+  56%,
+  100% {
+    opacity: 1;
   }
-  20%, 24%, 55% {
-      opacity: 0.5;
+
+  20%,
+  24%,
+  55% {
+    opacity: 0.5;
   }
 }
 

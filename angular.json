@@ -29,13 +29,18 @@
             "assets": [
               {
                 "glob": "**/*",
+                "input": "src/assets/",
+                "output": "/assets/"
+              },
+              {
+                "glob": "**/*",
                 "input": "public"
               }
             ],
-           "styles": [
+            "styles": [
               "src/styles/styles.scss",
               "node_modules/@fortawesome/fontawesome-free/css/all.min.css"
-            ],            
+            ],
             "stylePreprocessorOptions": {
               "includePaths": [
                 "src/styles"
@@ -99,7 +104,7 @@
             "styles": [
               "@angular/material/prebuilt-themes/magenta-violet.css",
               "src/styles/styles.scss",
-               "node_modules/@fortawesome/fontawesome-free/css/all.min.css"
+              "node_modules/@fortawesome/fontawesome-free/css/all.min.css"
             ],
             "scripts": []
           }

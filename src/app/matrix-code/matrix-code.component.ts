@@ -48,7 +48,8 @@ export class MatrixCodeComponent implements OnInit, OnDestroy {
     this.ctx.fillStyle = "rgba(0, 0, 0, 0.04)";
     this.ctx.fillRect(0, 0, this.canvas.width, this.canvas.height);
 
-    this.ctx.fillStyle = "#f4427d"; // green text
+    this.ctx.fillStyle = "#F1135C"; // red-purple text
+    // this.ctx.fillStyle = "#2AF3B0"; // green text
     this.ctx.font = this.fontSize + "px arial";
 
     for (let i = 0; i < this.drops.length; i++) {

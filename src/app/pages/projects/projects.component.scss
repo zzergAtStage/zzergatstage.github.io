@@ -1,0 +1,88 @@
+@import "colors";
+@import "animations";
+@import "responsive";
+
+.projects {
+  min-height: calc(100 * var(--vh));
+  width: 100%;
+  padding-bottom: 5em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  .image {
+    height: calc(30 * var(--vh));
+    width: 100%;
+
+    // background: linear-gradient(
+    //     to right,
+    //     rgba($background-color, 0.7),
+    //     rgba($background-color, 0.3)
+    //   ) center top 20%;
+    background-size: cover;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+  }
+
+  .title {
+    color: $secondary-color;
+    margin-bottom: 1em;
+    font-size: 3em;
+
+    @include media-md {
+      font-size: 4em;
+    }
+
+    @include media-lg {
+      font-size: 5em;
+    }
+  }
+
+  .projects-list-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .projects-list {
+      width: 70%;
+      display: grid;
+      grid-template-columns: minmax(100%, 1fr);
+      grid-gap: 2em;
+      margin-top: 2em;
+    }
+  }
+
+  @include media-md {
+    .image {
+      height: calc(40 * var(--vh));
+    }
+
+    .projects-list-container {
+      .projects-list {
+        grid-template-columns: repeat(2, minmax(45%, 1fr));
+      }
+    }
+  }
+
+  @include media-lg {
+    .image {
+      height: calc(45 * var(--vh));
+    }
+
+    .projects-list-container {
+      .projects-list {
+        grid-template-columns: repeat(3, minmax(30%, 1fr));
+      }
+    }
+  }
+
+  @include media-xl {
+    .image {
+      height: calc(50 * var(--vh));
+    }
+  }
+}
