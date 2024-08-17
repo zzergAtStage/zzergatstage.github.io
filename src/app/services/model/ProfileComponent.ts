@@ -57,6 +57,7 @@ export class ProfileComponent implements OnInit, OnChanges {
           lastName: this.profileData.lastName.localized[this.language] || this.profileData.localizedLastName,
           headline: this.profileData.headline.localized[this.language] || this.profileData.localizedHeadline,
           about: this.profileData.about.localized[this.language] || this.profileData.localizedAbout,
+          company: this.profileData.experience.job_item.company.localized[this.language] || this.profileData.experience.job_item.company.localizedCompany,
           vanityName: this.profileData.vanityName,
           id: this.profileData.id,
           profilePicture: this.profileData.profilePicture

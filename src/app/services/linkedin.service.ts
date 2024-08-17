@@ -60,23 +60,119 @@ Wenn ich nicht gerade in Code vertieft bin, findet man mich beim Wandern, Snowbo
       }
     },
     localizedAbout: "Some huge text",
-    experience: {
-      localized: {
-        en_US: "Informtech oo Ltd",
-        de_DE: "Informtech GmBH",
-        ru_RU: "Информтех ООО, "
-      }, preferredLocale: {
-        country: "US",
-        language: "en"
-      }
-    }, 
-    localizedexperience: "Some localized Expirience",
+    experience:
+      [
+        {
+        job_item:
+        {
+          dates: "12.2022 - present days",
+          company: {
+            localized: {
+              en_US: "Informtech oo Ltd",
+              de_DE: "Informtech GmBH",
+              ru_RU: "Информтех ООО, "
+            }, preferredLocale: {
+              country: "US",
+              language: "en"
+            }
+          }, localizedCompany: "Informtech oo Ltd",
+          title: {
+            localized: {
+              en_US: "Software Engineer",
+              de_DE: "Software Entwickler",
+              ru_RU: "Разработчик"
+            }, preferredLocale: {
+              country: "US",
+              language: "en"
+            }
+          },
+          title_desc: {
+            localized: {
+              en_US: "Engineer at the App Data Experience team, in charge of the analytics pipeline ingesting over 10 million events per hour, processing them and making them available to Analytics and Marketing teams, among others.",
+              de_DE: "Ingenieur im App-Daten-Experience-Team, verantwortlich für die Analysepipeline, die stündlich über 10 Millionen Ereignisse aufnimmt, verarbeitet und sie unter anderem den Analyse- und Marketingteams zur Verfügung stellt.",
+              ru_RU: "Инженер в команде App Data Experience, отвечающий за аналитический конвейер, обрабатывающий более 10 миллионов событий в час и предоставляющий их аналитическим и маркетинговым командам, среди других."
+            }, preferredLocale: {
+              country: "US",
+              language: "en"
+            }
+          },
+          responsibilities: {
+            localized: {
+              en_US: "Managing a series of different cloud technologies in AWS: S3, Kinesis (Kafka), Glue (Spark), Lambdas, Athena, and Apache Airflow.",
+              de_DE: "Verwaltung einer Reihe verschiedener Cloud-Technologien in AWS: S3, Kinesis (Kafka), Glue (Spark), Lambdas, Athena und Apache Airflow.",
+              ru_RU: "Управление серией различных облачных технологий в AWS: S3, Kinesis (Kafka), Glue (Spark), Lambdas, Athena и Apache Airflow."
+            }
+          },
+          achievements: {
+            localized: {
+              en_US: "Also maintaining and developing a React Native SDK to capture the events from the clients (multi-platform: iOS, Android, Web).",
+              de_DE: "Auch Wartung und Entwicklung eines React Native SDKs zur Erfassung der Ereignisse von den Clients (plattformsübergreifend: iOS, Android, Web).",
+              ru_RU: "Также поддержка и разработка React Native SDK для захвата событий от клиентов (мультиплатформенность: iOS, Android, Web)."
+            }
+          }
 
-    profilePicture: {
-      displayImage: "urn:li:digitalmediaAsset:C4D00AAAAbBCDEFGhiJ"
-    },
-    vanityName: "s.brusentsov",
-    id: "secretcode",
+
+        },
+      },
+      {
+        job_item:
+        {
+          dates: "12.2022 - present days",
+          company: {
+            localized: {
+              en_US: "Informtech oo Ltd",
+              de_DE: "Informtech GmBH",
+              ru_RU: "Информтех ООО, "
+            }, preferredLocale: {
+              country: "US",
+              language: "en"
+            }
+          }, localizedCompany: "Informtech oo Ltd",
+          title: {
+            localized: {
+              en_US: "Software Engineer",
+              de_DE: "Software Entwickler",
+              ru_RU: "Разработчик"
+            }, preferredLocale: {
+              country: "US",
+              language: "en"
+            }
+          },
+          title_desc: {
+            localized: {
+              en_US: "Engineer at the App Data Experience team, in charge of the analytics pipeline ingesting over 10 million events per hour, processing them and making them available to Analytics and Marketing teams, among others.",
+              de_DE: "Ingenieur im App-Daten-Experience-Team, verantwortlich für die Analysepipeline, die stündlich über 10 Millionen Ereignisse aufnimmt, verarbeitet und sie unter anderem den Analyse- und Marketingteams zur Verfügung stellt.",
+              ru_RU: "Инженер в команде App Data Experience, отвечающий за аналитический конвейер, обрабатывающий более 10 миллионов событий в час и предоставляющий их аналитическим и маркетинговым командам, среди других."
+            }, preferredLocale: {
+              country: "US",
+              language: "en"
+            }
+          },
+          responsibilities: {
+            localized: {
+              en_US: "Managing a series of different cloud technologies in AWS: S3, Kinesis (Kafka), Glue (Spark), Lambdas, Athena, and Apache Airflow.",
+              de_DE: "Verwaltung einer Reihe verschiedener Cloud-Technologien in AWS: S3, Kinesis (Kafka), Glue (Spark), Lambdas, Athena und Apache Airflow.",
+              ru_RU: "Управление серией различных облачных технологий в AWS: S3, Kinesis (Kafka), Glue (Spark), Lambdas, Athena и Apache Airflow."
+            }
+          },
+          achievements: {
+            localized: {
+              en_US: "Also maintaining and developing a React Native SDK to capture the events from the clients (multi-platform: iOS, Android, Web).",
+              de_DE: "Auch Wartung und Entwicklung eines React Native SDKs zur Erfassung der Ereignisse von den Clients (plattformsübergreifend: iOS, Android, Web).",
+              ru_RU: "Также поддержка и разработка React Native SDK для захвата событий от клиентов (мультиплатформенность: iOS, Android, Web)."
+            }
+          }
+
+
+        }
+      }
+    ]
+        ,
+        profilePicture: {
+        displayImage: "urn:li:digitalmediaAsset:C4D00AAAAbBCDEFGhiJ"
+      },
+        vanityName: "s.brusentsov",
+        id: "secretcode",
   };
 
   constructor() { }
