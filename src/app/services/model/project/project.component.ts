@@ -13,6 +13,7 @@ export class ProjectComponent implements OnInit {
   public iconClasses = {
     dev: 'fa-brands fa-dev',
     github: 'fab fa-github',
+    yandex: 'fa-brands fa-yandex-international',
     preview: 'fas fa-eye',
   };
 

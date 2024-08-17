@@ -27,98 +27,78 @@ export class ProjectsComponent implements OnInit {
       },
     },
     {
-      title: 'A Django App for Keeping Score',
+      title: 'Yandex Split buy-now, pay-later service',
       linkObjs: [
         {
-          label: 'Github repo',
-          url: 'https://github.com/danielcaballero88/django-scoring-app',
-          icon: 'github',
+          label: 'Product web-site',
+          url: '',
+          icon: 'yandex',
         },
       ],
       imageObj: {
-        alt: 'Implement a Python Scraper Concept',
-        src: '/assets/images/projects/django.jpg',
+        alt: 'Ya bank products',
+        src: '/assets/images/project/ya-split-proj.png',
       },
     },
     {
-      title: 'A Textual UI for Nordvpn in Linux',
+      title: 'Business data migration due merger of banks',
       linkObjs: [
         {
-          label: 'Github repo',
-          url: 'https://github.com/danielcaballero88/nordvpn-textual-ui',
-          icon: 'github',
+          label: 'NDA',
+          url: '',
+          icon: 'dev',
         },
       ],
       imageObj: {
-        alt: 'Implement a Python Scraper Concept',
-        src: '/assets/images/projects/textual.png',
+        alt: 'Business data migration due merger of banks',
+        src: '/assets/images/project/bank-merger.jpg',
       },
     },
     {
-      title: 'Simple Python Scraper',
+      title: 'Expenses accounting service',
       linkObjs: [
         {
           label: 'Read Post',
-          url: 'https://dev.to/danielcaballero88/how-to-implement-a-simple-scraper-with-python-57ic',
+          url: '',
           icon: 'dev',
         },
         {
           label: 'Github repo',
-          url: 'https://github.com/danielcaballero88/scrape-cgeonline',
+          url: 'https://github.com/zzergAtStage/diploma',
           icon: 'github',
         },
       ],
       imageObj: {
-        alt: 'Implement a Python Scraper Concept',
-        src: '/assets/images/projects/python-scraper.jpg',
+        alt: 'Expenses accounting service',
+        src: '/assets/images/project/expenses-calculator.png',
       },
     },
     {
-      title: 'Spin Up a VM in GCP',
+      title: 'Eathquake analyzing service',
       linkObjs: [
         {
-          label: 'Read Post',
-          url: 'https://dev.to/danielcaballero88/how-to-spin-up-a-free-linux-virtual-machine-on-google-cloud-platform-1olj',
-          icon: 'dev',
+          label: 'Github repo',
+          url: 'https://github.com/zzergAtStage/diploma',
+          icon: 'github',
         },
       ],
       imageObj: {
-        alt: 'Cloud Computing Concept Image',
-        src: '/assets/images/projects/cloud-computing.jpg',
-        attributionLabel: 'Image by Vecteezy',
-        attributionUrl: 'https://www.vecteezy.com/free-vector/cloud-computing',
+        alt: 'Eathquake analyzing service',
+        src: '/assets/images/project/earthquake-desktop.png',
       },
     },
     {
-      title: 'Set Up Notifications with Python',
+      title: 'Earthquake microservice operational',
       linkObjs: [
         {
-          label: 'Read Post',
-          url: 'https://dev.to/danielcaballero88/how-to-set-up-email-and-message-notifications-for-a-python-application-5f3l',
-          icon: 'dev',
+          label: 'Github repo',
+          url: 'https://github.com/zzergAtStage/diploma-server',
+          icon: 'github',
         },
       ],
       imageObj: {
-        alt: 'Notifications Concept Image',
-        src: '/assets/images/projects/notifications.jpg',
-        attributionLabel: 'Image by Vecteezy',
-        attributionUrl: 'https://www.vecteezy.com/free-photos',
-      },
-    },
-    {
-      title: 'Deploy to a Linux VM',
-      linkObjs: [
-        {
-          label: 'Read Post',
-          url: 'https://dev.to/danielcaballero88/how-to-deploy-your-program-to-run-periodically-in-a-linux-vm-in-gcp-compute-engine-4km6',
-          icon: 'dev',
-        },
-      ],
-      imageObj: {
-        alt: 'Deploy to Cloud Concept',
-        src: '/assets/images/projects/deploy-to-cloud.jpg',
-        attributionLabel: 'Image by Vecteezy',
-        attributionUrl: 'https://www.vecteezy.com/free-vector/cloud-computing',
+        alt: 'Earthquake microservice operational',
+        src: '/assets/images/project/microservices.png'
       },
     },
   ];

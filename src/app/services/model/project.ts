@@ -1,7 +1,7 @@
 interface LinkObj {
     label: string;
     url: string;
-    icon: 'dev' | 'github' | 'preview';
+    icon: 'dev' | 'github' | 'preview' | 'yandex';
   }
   
   interface ImageObj {
