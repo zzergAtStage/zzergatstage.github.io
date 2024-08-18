@@ -3,7 +3,7 @@
 </div>
 <nav [class.menu-open]="menuOpen">
   <ul class="link-list" [class.menu-open]="menuOpen">
-    <li *ngFor="let link of linkList" class="link-item" [class.menu-open]="menuOpen">
+    <li *ngFor="let link of linkList" (click)="menuOpen = !menuOpen" class="link-item" [class.menu-open]="menuOpen">
       <a routerLink={{link.url}} class="link" [class.active]="router.url == link.url">
         {{ link.label }}
       </a>
