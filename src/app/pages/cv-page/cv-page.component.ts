@@ -1,5 +1,5 @@
 import { Component, HostListener, OnInit } from '@angular/core';
-import { LinkedInService } from '../../services/linkedin.service';
+import { PersonalService } from '../../services/personal.service';
 import { LocaleService } from '../../services/locale-service';
 import { ActivatedRoute } from '@angular/router';
 import { ProfileComponent } from '../../services/model/ProfileComponent';
@@ -19,7 +19,7 @@ export class CvPageComponent implements OnInit {
   queryParams: { [key: string]: any } = {};
   showRussian: boolean = false;
 
-  constructor(private linkedInProfiler: LinkedInService,
+  constructor(private linkedInProfiler: PersonalService,
     private localeService: LocaleService,
     private route: ActivatedRoute
   ) { }

@@ -1,46 +1,51 @@
+<div class="box language-selector">
+  <span (click)="setLanguage('en_US')">English</span> |
+  <span (click)="setLanguage('de_DE')">Deutsch</span>
+  @if (showRussian) {<span (click)="setLanguage('ru_RU')">| Русский</span>}
+</div>
 <div class="about" *ngIf="localizedProfile">
-    <div class="bio-and-image">
-      <!-- <img  *ngIf="profileData.profilePicture"
+  <div class="bio-and-image">
+  <!-- <img  *ngIf="profileData.profilePicture"
             [src]="getProfilePictureUrl(profileData.profilePicture.displayImage)" alt="Profile Picture"> -->
-      <div class="bio">
-        <h2>BIO</h2>
-        <h2 class="full-name">{{ profileData.firstName.localized[language] }} {{
-            profileData.lastName.localized[language] }}</h2>
-        <p>{{ profileData.headline.localized[language] }}</p>
-        <p>
-          I started my professional life as a Accounting manager etc...
-        </p>
-        <p>
-          Now I have over 11 years of experience in all the stages of the backend
-          development cycle. >> {{language}}
-        </p>
-      </div>
-    </div>
-  
-    <div class="jobs-list">
-      <div class="job-item" *ngFor="let job of profileData.experience">
-        <h2>{{job.job_item.dates}}</h2>
-        <h3>{{job.job_item.company.localized[language]}}</h3>
-        <h4>{{job.job_item.title.localized[language]}}</h4>
-        <ul>
-          <li>
-            {{job.job_item.title_desc.localized[language]}}
-          </li>
-          <li>
-            {{job.job_item.responsibilities.localized[language]}}
-          </li>
-          <li>
-            {{job.job_item.achievements.localized[language]}}
-          </li>
-         
-        </ul>
-      </div>
-      <div class="job-item">
-        <h2>Oct 2022 - May 2023</h2>
-        <h3>Sabbatical</h3>
-        <h4>Traveling around the world</h4>
-      </div>
-      
-     
+    <div class="bio">
+      <h2>BIO</h2>
+      <h2 class="full-name">{{ profileData.firstName.localized[language] }} {{
+        profileData.lastName.localized[language] }}</h2>
+      <p>{{ profileData.headline.localized[language] }}</p>
+      <p>
+        I started my professional life as a Accounting manager etc...
+      </p>
+      <p>
+        Now I have over 11 years of experience in all the stages of the backend
+        development cycle. >> {{language}}
+      </p>
     </div>
   </div>
+
+  <div class="jobs-list">
+    <div class="job-item" *ngFor="let job of profileData.experience">
+      <h2>{{job.job_item.dates}}</h2>
+      <h3>{{job.job_item.company.localized[language]}}</h3>
+      <h4>{{job.job_item.title.localized[language]}}</h4>
+      <ul>
+        <li>
+          {{job.job_item.title_desc.localized[language]}}
+        </li>
+        <li>
+          {{job.job_item.responsibilities.localized[language]}}
+        </li>
+        <li>
+          {{job.job_item.achievements.localized[language]}}
+        </li>
+
+      </ul>
+    </div>
+    <div class="job-item">
+      <h2>Oct 2022 - May 2023</h2>
+      <h3>Sabbatical</h3>
+      <h4>Traveling around the world</h4>
+    </div>
+
+
+  </div>
+</div>

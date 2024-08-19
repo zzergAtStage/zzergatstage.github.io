@@ -2,7 +2,7 @@ import { CommonModule } from '@angular/common';
 import { Component, Input, OnChanges, OnInit, SimpleChanges } from '@angular/core';
 import { LanguageSelectorComponent } from '../../navigation/language-selector/language-selector.component';
 import { Subscription } from 'rxjs';
-import { LinkedInService } from '../../services/linkedin.service';
+import { PersonalService } from '../../services/personal.service';
 import { LocaleService } from '../../services/locale-service';
 
 @Component({
@@ -17,8 +17,9 @@ export class AboutComponent implements OnInit, OnChanges {
   profileData: any;
   localizedProfile: any = {};
   languageSubscription: Subscription | undefined;
+  showRussian: boolean = false;
 
-  constructor(private linkedInService: LinkedInService,
+  constructor(private personalService: PersonalService,
     private localeService: LocaleService
   ) { }
 
@@ -31,7 +32,7 @@ export class AboutComponent implements OnInit, OnChanges {
   }
 
   ngOnDestroy(): void {
-    if (this.languageSubscription){
+    if (this.languageSubscription) {
       this.languageSubscription.unsubscribe();
     }
   }
@@ -44,7 +45,7 @@ export class AboutComponent implements OnInit, OnChanges {
   }
 
   fetchProfileData(): void {
-    this.linkedInService.getProfileData().subscribe(data => {
+    this.personalService.getProfileData().subscribe(data => {
       this.profileData = data;
       this.localizeProfileData();
     });
@@ -66,5 +67,11 @@ export class AboutComponent implements OnInit, OnChanges {
 
   getProfilePictureUrl(displayImage: string): string {
     return `https://media.licdn.com/dms/image/D4E03AQHPXUwJ5IL2EQ/profile-displayphoto-shrink_200_200/0/1664734367985?e=1727913600&v=beta&t=Y4PKUNd1Yro-T1oiRakGUCjBysu7WeQF3iHNry-wbeA`;
+  }
+
+  setLanguage(_language: string) {
+    console.log("About.component: .setlanguage = " + _language);
+    this.language = _language;
+    this.localeService.changeLanguage(_language);
   }
 }

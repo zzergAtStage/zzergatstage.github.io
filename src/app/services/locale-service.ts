@@ -9,18 +9,10 @@ import { BehaviorSubject, Observable, of } from 'rxjs';
 export class LocaleService {
   private languageSource = new BehaviorSubject<string>('en_US'); // Default language
   currentLanguage = this.languageSource.asObservable();
-
+  private mockMapData: any;
   changeLanguage(language: string) {
     this.languageSource.next(language);
   }
-
-  private mockMapData: {
-    localeShorted: {
-      en: 'en_US';
-      de: 'de_DE';
-      ru: 'ru_RU';
-    };
-  } | undefined;
   constructor() { this.mockMapData = {
     localeShorted: {
       en: 'en_US',

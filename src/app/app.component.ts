@@ -27,6 +27,7 @@ export class AppComponent implements OnInit, AfterViewInit {
   private language: string = '';
   instagramRef: any = 'https://www.instagram.com/the_aging_zzerg/';
   githubRef: any = 'https://github.com/zzergAtStage';
+  linkedInRef: any = 'https://www.linkedin.com/in/undefined-errors-handler/';
   constructor(
 
     private localeService: LocaleService,
