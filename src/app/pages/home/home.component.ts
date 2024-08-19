@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+import { PersonalService } from '../../services/personal.service';
 
 @Component({
   selector: 'app-home',
@@ -7,6 +8,16 @@ import { Component } from '@angular/core';
   templateUrl: './home.component.html',
   styleUrl: './home.component.scss'
 })
-export class HomeComponent {
+export class HomeComponent implements OnInit {
+  profileData: any;
 
+  constructor(private personalService: PersonalService) {}
+  ngOnInit(): void {
+    this.fetchProfileData();
+  }
+  fetchProfileData(): void {
+    this.personalService.getProfileData().subscribe(data => {
+      this.profileData = data;
+    });
+  }
 }

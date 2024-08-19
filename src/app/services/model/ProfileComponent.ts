@@ -1,5 +1,5 @@
 import { Component, Input, OnChanges, OnInit, SimpleChanges } from '@angular/core';
-import { LinkedInService } from '../linkedin.service';
+import { PersonalService } from '../personal.service';
 import { CommonModule } from '@angular/common';
 import { LanguageSelectorComponent } from '../../navigation/language-selector/language-selector.component';
 import { Subscription } from 'rxjs';
@@ -18,7 +18,7 @@ export class ProfileComponent implements OnInit, OnChanges {
     localizedProfile: any = {};
     languageSubscription: Subscription | undefined;
   
-    constructor(private linkedInService: LinkedInService,
+    constructor(private linkedInService: PersonalService,
       private localeService: LocaleService
     ) { }
   

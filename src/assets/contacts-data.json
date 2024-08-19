@@ -1,0 +1,24 @@
+[
+    {
+    "type": "Email",
+    "link": "mailto:hightemplar88@gmail.com",
+    "icon": "fas fa-envelope",
+    "label": "Email",
+    "contactValue": "hightemplar88@gmail.com"
+    },
+    {
+    "type": "tg",
+    "link": "https://t.me/tamed_analyst",
+    "icon": "fa-brands fa-telegram",
+    "label": "Telegram",
+    "contactValue": "@tamed_analyst"
+    }
+    ,
+    {
+    "type": "linkedin",
+    "link": "https://www.linkedin.com/in/undefined-errors-handler/",
+    "icon": "fa-brands fa-linkedin",
+    "label": "Linkedin",
+    "contactValue": "Sergio Brü"
+    }
+]
