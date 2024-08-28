@@ -13,7 +13,7 @@ import { LocaleService } from '../../services/locale-service';
   styleUrl: './about.component.scss'
 })
 export class AboutComponent implements OnInit, OnChanges {
-  @Input() language: string = 'en_US';
+  @Input() language: string = 'de_DE';
   profileData: any;
   localizedProfile: any = {};
   languageSubscription: Subscription | undefined;
@@ -28,6 +28,8 @@ export class AboutComponent implements OnInit, OnChanges {
       this.language = language;
       this.localizeProfileData();
     });
+    const locale = this.localeService.getBrowserLocale();
+    this.showRussian = locale === 'ru-RU';
     this.fetchProfileData();
   }
 

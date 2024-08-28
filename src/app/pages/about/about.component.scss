@@ -11,12 +11,6 @@
   .bio-and-image {
     height: calc(50 * var(--vh));
     width: 100%;
-    // background: linear-gradient(
-    //     to right,
-    //     rgba($background-color, 0.7),
-    //     rgba($background-color, 0.3)
-    //   ),
-    //   url("/assets/images/daniel.jpg") center top 20%;
     background-size: cover;
 
     display: flex;
@@ -100,4 +94,42 @@
       }
     }
   }
+}
+
+ hr {
+  margin-bottom: 0.5em;
+ }
+.language-selector {
+  z-index: var(--z-top);
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  background: lighten($background-color, 10%);
+  top: 70%;
+  right: 0;
+  transform: translateY(-50%);
+  border-radius: 10px;
+  padding: 10px;
+  
+
+  .selector-item {
+    cursor: pointer;
+    font-weight: normal;
+    color: inherit;
+
+    &.active {
+      font-weight: bold;
+      color: $secondary-color;
+    }
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+
+
+.selector-item {
+  margin-bottom: 10px;
+  cursor: pointer;
 }
