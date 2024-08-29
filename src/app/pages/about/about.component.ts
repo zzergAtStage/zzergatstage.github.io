@@ -72,7 +72,7 @@ export class AboutComponent implements OnInit, OnChanges {
   }
 
   setLanguage(_language: string) {
-    console.log("About.component: .setlanguage = " + _language);
+    console.log("About.component: .setLanguage = " + _language);
     this.language = _language;
     this.localeService.changeLanguage(_language);
   }

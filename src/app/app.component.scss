@@ -5,7 +5,7 @@
 header {
   position: fixed;
   z-index: 2;
-  width: 100%;
+  width: 100vw;
   padding: 1em;
 
   @include media-md {
