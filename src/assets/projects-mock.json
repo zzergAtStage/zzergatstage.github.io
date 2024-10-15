@@ -46,8 +46,8 @@
       "linkObjs": [
         {
           "label": "NDA",
-          "url": "",
-          "icon": "dev"
+          "url": "/projects",
+          "icon": "github"
         }
       ],
       "imageObj": {
@@ -60,12 +60,12 @@
       "linkObjs": [
         {
           "label": "Read Post",
-          "url": "",
+          "url": "https://github.com/zzergAtStage/home-expenses-book/tree/hotfix/refactor-dev-profiles-envlpmnt?tab=readme-ov-file#home-expenses-book",
           "icon": "dev"
         },
         {
           "label": "Github repo",
-          "url": "https://github.com/zzergAtStage/diploma",
+          "url": "https://github.com/users/zzergAtStage/projects/2",
           "icon": "github"
         }
       ],

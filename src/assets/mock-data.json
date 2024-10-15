@@ -109,9 +109,9 @@
         },
         "title_desc": {
           "localized": {
-            "de_DE": "Systemanalytiker und Architekt für Softwarelösungen, Technischer Redakteur",
-            "en_US": "System Analyst and Software Solutions Architect, Technical Writer",
-            "ru_RU": "Системный аналитик и архитектор программных решений, системный писатель"
+            "de_DE": "Systemanalytiker und Architekt für Softwarelösungen, Java Software Entwickler",
+            "en_US": "System Analyst and Software Solutions Architect, Java Software Developer",
+            "ru_RU": "Системный аналитик и архитектор программных решений, Java разработчик"
           },
           "preferredLocale": null
         },
@@ -119,7 +119,7 @@
           "localized": {
             "de_DE": "Bei Yandex Technologies übernahm ich mehrere Rollen, darunter Systemanalytiker und Architekt für Softwarelösungen, Technischer Redakteur, Produktverantwortlicher, Code-Reviewer. Ich war verantwortlich für die Schätzung der Aufgabenaufwände und die Bearbeitung von Anfragen aus dem Kunden-Backlog.",
             "en_US": "At Yandex Technologies, I undertook multiple roles, including System Analyst and Software Solutions Architect, Technical Writer, Product Owner, Code Reviewer, I was estimating tasks costs and customers backlog requests.",
-            "ru_RU": "В Yandex Technologies я выполнял несколько ролей, включая роль системного аналитика и архитектора программных решений, технического писателя, владельца продукта, ревьюера кода. Я занимался оценкой затрат на задачи и запросов из бэклога клиентов."
+            "ru_RU": "В Yandex Technologies я выполнял несколько ролей, включая роль системного аналитика и архитектора программных решений, технического писателя, владельца продукта, ревьюера кода и наконец Java разработчика. Я занимался оценкой затрат на задачи и запросов из бэклога клиентов."
           },
           "preferredLocale": null
         },
