@@ -28,6 +28,20 @@
       }
     },
     {
+      "title": "Thymeleaf based, Spring Boot Quizzer",
+      "linkObjs": [
+        {
+          "label": "Product web-site",
+          "url": "https://github.com/zzergAtStage/java-examinator",
+          "icon": "dev"
+        }
+      ],
+      "imageObj": {
+        "alt": "Quizzer app",
+        "src": "assets/images/project/logon.png"
+      }
+    },
+    {
       "title": "Business data migration due merger of banks",
       "linkObjs": [
         {
