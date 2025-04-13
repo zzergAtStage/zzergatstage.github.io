@@ -1,4 +1,5 @@
 # BruCv
+[![pages-build-deployment](https://github.com/zzergAtStage/zzergatstage.github.io/actions/workflows/pages/pages-build-deployment/badge.svg)](https://github.com/zzergAtStage/zzergatstage.github.io/actions/workflows/pages/pages-build-deployment)
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.0.7.
 
