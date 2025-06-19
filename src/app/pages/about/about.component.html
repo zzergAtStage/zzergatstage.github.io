@@ -1,23 +1,25 @@
 <div class="box language-selector">
-  <span (click)="setLanguage('en_US')">English</span> |
-  <span (click)="setLanguage('de_DE')">Deutsch</span>
-  @if (showRussian) {<span (click)="setLanguage('ru_RU')">| Русский</span>}
+  <span class="selector-item" [class.active]="language === 'en_US'" (click)="setLanguage('en_US')">Eng</span>
+  <hr class="solid">
+  <span class="selector-item" [class.active]="language === 'de_DE'" (click)="setLanguage('de_DE')">Deu</span>
+  @if (showRussian) {
+    <hr class="solid">
+    <span class="selector-item" [class.active]="language === 'ru_RU'" (click)="setLanguage('ru_RU')">Руc</span>
+  }
 </div>
+
 <div class="about" *ngIf="localizedProfile">
   <div class="bio-and-image">
-  <!-- <img  *ngIf="profileData.profilePicture"
+    <!-- <img  *ngIf="profileData.profilePicture"
             [src]="getProfilePictureUrl(profileData.profilePicture.displayImage)" alt="Profile Picture"> -->
     <div class="bio">
       <h2>BIO</h2>
       <h2 class="full-name">{{ profileData.firstName.localized[language] }} {{
         profileData.lastName.localized[language] }}</h2>
       <p>{{ profileData.headline.localized[language] }}</p>
+      <br>
       <p>
-        I started my professional life as a Accounting manager etc...
-      </p>
-      <p>
-        Now I have over 11 years of experience in all the stages of the backend
-        development cycle. >> {{language}}
+        {{profileData.about.localized[language]}}
       </p>
     </div>
   </div>
@@ -40,12 +42,5 @@
 
       </ul>
     </div>
-    <div class="job-item">
-      <h2>Oct 2022 - May 2023</h2>
-      <h3>Sabbatical</h3>
-      <h4>Traveling around the world</h4>
-    </div>
-
-
   </div>
 </div>

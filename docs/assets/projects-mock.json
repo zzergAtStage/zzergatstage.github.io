@@ -28,12 +28,26 @@
       }
     },
     {
+      "title": "Thymeleaf based, Spring Boot Quizzer",
+      "linkObjs": [
+        {
+          "label": "Product web-site",
+          "url": "https://github.com/zzergAtStage/java-examinator",
+          "icon": "dev"
+        }
+      ],
+      "imageObj": {
+        "alt": "Quizzer app",
+        "src": "assets/images/project/logon.png"
+      }
+    },
+    {
       "title": "Business data migration due merger of banks",
       "linkObjs": [
         {
           "label": "NDA",
-          "url": "",
-          "icon": "dev"
+          "url": "/projects",
+          "icon": "github"
         }
       ],
       "imageObj": {
@@ -46,12 +60,12 @@
       "linkObjs": [
         {
           "label": "Read Post",
-          "url": "",
+          "url": "https://github.com/zzergAtStage/home-expenses-book/tree/hotfix/refactor-dev-profiles-envlpmnt?tab=readme-ov-file#home-expenses-book",
           "icon": "dev"
         },
         {
           "label": "Github repo",
-          "url": "https://github.com/zzergAtStage/diploma",
+          "url": "https://github.com/users/zzergAtStage/projects/2",
           "icon": "github"
         }
       ],
@@ -71,7 +85,7 @@
       ],
       "imageObj": {
         "alt": "Earthquake analyzing service",
-        "src": "/assets/images/project/earthquake-desktop.png"
+        "src": "/assets/images/project/eakmonitor.gif"
       }
     },
     {
