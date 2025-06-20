@@ -30,7 +30,7 @@
 </main>
 
 <footer>
-  <div class="social-icons">
+  <div *ngFor="let contactObj of contactsData" class="social-icons">
     <a [href]="instagramRef" target="_blank">
       <i class="fab fa-instagram fa-2x"></i>
     </a>
@@ -38,7 +38,7 @@
       <i class="fab fa-github fa-2x"></i>
     </a>
     
-    <a [href]="linkedInRef" target="_blank">
+    <a [href]="contactObj?.link" target="_blank">
       <i class="fa-brands fa-linkedin fa-2x"></i>
     </a>
 

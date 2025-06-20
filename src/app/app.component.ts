@@ -9,7 +9,8 @@ import { LocaleService } from './services/locale-service';
 import { ProfileComponent } from './services/model/ProfileComponent';
 import { fromEvent, Observable, Subscription } from 'rxjs';
 import { NavbarComponent } from "./navigation/navbar/navbar.component";
-
+import contactData from '../assets/contacts-data.json'
+import { ContactObj } from './pages/contacts/contact';
 
 
 
@@ -23,11 +24,12 @@ import { NavbarComponent } from "./navigation/navbar/navbar.component";
 })
 export class AppComponent implements OnInit, AfterViewInit {
   title = 'cv-website';
+  contactsData: ContactObj[] = contactData as ContactObj[];
 
   private language: string = '';
   instagramRef: any = 'https://www.instagram.com/the_aging_zzerg/';
   githubRef: any = 'https://github.com/zzergAtStage';
-  linkedInRef: any = 'https://www.linkedin.com/in/undefined-errors-handler/';
+ 
   constructor(
 
     private localeService: LocaleService,
